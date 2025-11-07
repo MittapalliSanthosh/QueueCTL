@@ -1,0 +1,23 @@
+{
+  "name": "queuectl",
+  "version": "1.0.0",
+  "description": "CLI queuectl - background job queue with retries and DLQ (Node.js + MySQL)",
+  "main": "src/cli.js",
+  "bin": {
+    "queuectl": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test-smoke": "bash scripts/smoke-test.sh"
+  },
+  "dependencies": {
+    "commander": "^10.0.0",
+    "dotenv": "^16.0.0",
+    "mysql2": "^3.3.0",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
